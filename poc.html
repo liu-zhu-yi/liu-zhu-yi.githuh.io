@@ -9,6 +9,7 @@
     <script type="text/javascript" src="https://wwwxhihonor.com/dsbridge.js"> </script>
     <script>
         bridge.call("download.queryAppList", {pkgNameList: "com.zhiliaoapp.musically,com.whatapp"}, function (result_json) {
+            alert(result_json)
         })
         bridge.call("download.downloadButtonOnClick",{packageName: "com.zhiliaoapp.musically"}, function (v) {
            })     
