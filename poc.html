@@ -11,8 +11,10 @@
         bridge.call("download.queryAppList", {pkgNameList: "com.zhiliaoapp.musically,com.whatapp"}, function (result_json) {
             alert(result_json)
         })
+        alert("Begin to call downloadButtonOnClick")
         bridge.call("download.downloadButtonOnClick",{packageName: "com.zhiliaoapp.musically"}, function (v) {
-           })     
+           }) 
+        alert("End to call downloadButtonOnClick")
     </script>  
 </body>
 </html>
