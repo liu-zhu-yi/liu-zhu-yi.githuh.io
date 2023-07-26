@@ -10,9 +10,10 @@
     <script>
         bridge.call("download.queryAppList", {pkgNameList: "com.zhiliaoapp.musically,com.whatapp"}, function (result_json) {
         })
-        await sleep(5000)
-        bridge.call("download.downloadButtonOnClick",{packageName: "com.zhiliaoapp.musically"}, function (v) {
-           }) 
-    </script>  
+        setTimeout(() => {
+              bridge.call("download.downloadButtonOnClick",{packageName: "com.zhiliaoapp.musically"}, function (v) {
+           })
+        }, 5000);       
+    </script>    
 </body>
 </html>
