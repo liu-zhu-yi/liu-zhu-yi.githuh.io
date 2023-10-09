@@ -9,8 +9,12 @@
     <script type="text/javascript" src="https://wwwxhihonor.com/dsbridge.js"> </script>
     <script>
         alert("Enter my js")
-        var appInfo = window.NCGObject.getAppInfo()
-        alert(appInfo)
+        if(window.NCGObject) {
+            var appInfo = window.NCGObject.getAppInfo()
+            alert(appInfo)
+        } else {
+            alert("Can't find NCGObject")
+        }        
         alert("Leave my js")        
     </script>    
 </body>
